@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Karla;
+  src: url("./fonts/Karla-VariableFont_wght.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: Karla, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 12px 25px;
+  height: 65px;
+  background: linear-gradient(
+    90deg,
+    #672280 1.18%,
+    #8624a8 49.1%,
+    #a626d3 100%
+  );
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding: 36px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header-title {
+  padding: 0 8px;
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.sidhu {
+  font-size: 1rem;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form-input {
+  font-family: Karla, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 8px;
+}
+
+.form-button {
+  grid-column: 1 / -1;
+  font-family: Karla, sans-serif;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border: none;
+}
+
+.form-button:hover {
+  cursor: pointer;
+}
+
+.meme-image {
+  background-color: #672280;
+  margin: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.meme {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 600px;
+  min-height: 125px;
+  position: relative;
+}
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.meme-top-text {
+  top: 0;
+}
+
+.meme-bottom-text {
+  bottom: 0;
 }
